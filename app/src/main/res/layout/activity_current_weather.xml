@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="159dp"
+        android:background="@drawable/appnamebackground"
+        android:fontFamily="@font/pacifico"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:text="Current Weather"
+        android:textColor="@color/Text"
+        android:textSize="35dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/TextViewCityName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/buttonbackground"
+                android:fontFamily="@font/walkwaybold"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="Plovdiv, Bulgaria"
+                android:textAlignment="gravity"
+                android:textColor="@color/Text"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/LayoutWeatherInformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TextViewCityName"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/buttonbackground"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <ImageView
+                    android:id="@+id/WeatherImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@mipmap/sun" />
+
+                <TextView
+                    android:id="@+id/TextViewWeatherInformation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_toRightOf="@id/WeatherImage"
+                    android:fontFamily="@font/walkwaybold"
+                    android:text="Mostly Sunny"
+                    android:textColor="@color/Text"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TextViewSunrise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/TextViewWeatherInformation"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/WeatherImage"
+                    android:fontFamily="@font/walkwaybold"
+                    android:text="Sunrise: 06:55"
+                    android:textAlignment="center"
+                    android:textColor="@color/Text"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TextViewSunset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/TextViewWeatherInformation"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/TextViewSunrise"
+                    android:fontFamily="@font/walkwaybold"
+                    android:text="Sunset: 20:05"
+                    android:textAlignment="center"
+                    android:textColor="@color/Text"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/LayoutTemperatureInformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LayoutWeatherInformation"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/buttonbackground"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <ImageView
+                    android:id="@+id/TemperatureImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@mipmap/hot" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/TemperatureImage"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/walkwaybold"
+                        android:text="16°C"
+                        android:textColor="@color/Text"
+                        android:textSize="40dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/walkwaybold"
+                        android:text="Feels like: 20°C"
+                        android:textColor="@color/Text"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/walkwaybold"
+                        android:text="Low : 9°C"
+                        android:textColor="@color/Text"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/walkwaybold"
+                        android:text="High: 22°C"
+                        android:textColor="@color/Text"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/walkwaybold"
+                        android:text="Humidity: 10%"
+                        android:textColor="@color/Text"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/walkwaybold"
+                        android:text="Mist: 0%"
+                        android:textColor="@color/Text"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/LayoutWindInformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LayoutTemperatureInformation"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/buttonbackground"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <ImageView
+                    android:id="@+id/WindImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@mipmap/wind" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/WindImage"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/walkwaybold"
+                        android:text="Strong Wind"
+                        android:textColor="@color/Text"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/walkwaybold"
+                        android:text="Direction: South East"
+                        android:textColor="@color/Text"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/walkwaybold"
+                        android:text="Speed: 22 km/h"
+                        android:textColor="@color/Text"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/walkwaybold"
+                        android:text="Percipitation: 0 mm"
+                        android:textColor="@color/Text"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/walkwaybold"
+                        android:text="Thunderstorms: 15%"
+                        android:textColor="@color/Text"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/walkwaybold"
+                        android:text="Snow: 0 cm"
+                        android:textColor="@color/Text"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/walkwaybold"
+                        android:text="Visibiity: 16 km"
+                        android:textColor="@color/Text"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

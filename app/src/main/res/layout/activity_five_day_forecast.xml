@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="159dp"
+        android:background="@drawable/appnamebackground"
+        android:fontFamily="@font/pacifico"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:text="Five Day Forecast"
+        android:textColor="@color/Text"
+        android:textSize="35dp" />
+
+
+
+</LinearLayout>

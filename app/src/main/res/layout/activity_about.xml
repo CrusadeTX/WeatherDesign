@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_above="@id/TextDetails"
+        android:id="@+id/textNameandVersion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonbackground"
+        android:fontFamily="@font/walkwaybold"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:text="@string/Name_and_Version"
+        android:textColor="@color/Text"
+        android:textSize="25dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="159dp"
+        android:background="@drawable/appnamebackground"
+        android:fontFamily="@font/pacifico"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:text="About"
+        android:textColor="@color/Text"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/TextDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Details"
+        android:layout_centerInParent="true"
+        android:background="@drawable/buttonbackground"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/Text"
+        android:textSize="18dp"
+        android:fontFamily="@font/walkwaybold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        />
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="159dp"
+        android:background="@drawable/appnamebackground"
+        android:fontFamily="@font/pacifico"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:text="@string/app_name"
+        android:textColor="@color/Text"
+        android:textSize="35dp" />
+
+    <Button
+        android:id="@+id/CurrentWeather"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Current Weather"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/buttonbackground"
+        android:textColor="@color/Text"
+        android:fontFamily="@font/walkwaybold"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/ThreeDayForecast"/>
+    <Button
+        android:id="@+id/ThreeDayForecast"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="3 Day Forecast"
+        android:layout_marginBottom="5dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/buttonbackground"
+        android:textColor="@color/Text"
+        android:fontFamily="@font/walkwaybold"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+   <!-- <Button
+        android:id="@+id/FiveDayForecast"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="5 Day Forecast"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/ThreeDayForecast"
+        android:background="@drawable/buttonbackground"
+        android:textColor="@color/Text"
+        android:fontFamily="@font/walkwaybold"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>-->
+    <Button
+        android:id="@+id/About"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:layout_below="@id/ThreeDayForecast"
+        android:background="@drawable/buttonbackground"
+        android:textColor="@color/Text"
+        android:fontFamily="@font/walkwaybold"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
